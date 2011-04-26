@@ -1,4 +1,6 @@
 Filebox::Application.routes.draw do
+  resources :assets
+
   devise_for :users
 
   # The priority is based upon order of creation:

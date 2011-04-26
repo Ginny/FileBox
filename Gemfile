@@ -18,3 +18,5 @@ gem 'paperclip', '~> 2.3'
 
 # For facebook login
 gem 'oauth2'
+
+# gem "mocha", :group => :test
