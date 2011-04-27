@@ -2,11 +2,11 @@
 
 <table>
   <tr>
-    <th>User</th>
+    <th>Uploaded files</th>
   </tr>
   <% for asset in @assets %>
     <tr>
-      <td><%= asset.user_id %></td>
+      <td><%= link_to asset.file_name, asset.uploaded_file.url %></td>
       <td><%= link_to "Show", asset %></td>
       <td><%= link_to "Edit", edit_asset_path(asset) %></td>
       <td><%= link_to "Destroy", asset, :confirm => 'Are you sure?', :method => :delete %></td>

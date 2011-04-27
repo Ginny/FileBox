@@ -7,4 +7,9 @@ class Asset < ActiveRecord::Base
   
   validates_attachment_size :uploaded_file, :less_than => 10.megabytes
   validates_attachment_presence :uploaded_file
+  
+  # Paperclip created us column in assets called uploaded_file_file_name, but it's a bit ugly and too long
+  def file_name
+    uploaded_file_file_name
+  end
 end
