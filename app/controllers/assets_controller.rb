@@ -39,4 +39,16 @@ class AssetsController < ApplicationController
     @asset.destroy
     redirect_to assets_url, :notice => "Successfully destroyed asset."
   end
+  
+  # Find asset, if there is any, it will send it to the user
+  def get
+	@asset = current_user.assets.find_by_id(params[:id])
+	if @asset
+		send_file @asset.uploaded_file.path, :type => @asset.uploaded_file_content_type
+	else
+		flash[:error] = "Hey, what are u doin?!"
+		redirect_to assets_path
+	end
+  end
+  
 end

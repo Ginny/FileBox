@@ -31,3 +31,34 @@ body {
 #login_user_status {  
   float: right;      
 }  
+
+.flash {
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
+    -webkit-box-shadow: .125em .125em .125em #cfcfcf;
+    -moz-box-shadow: .125em .125em .125em #cfcfcf;
+    box-shadow: .125em .125em .125em #cfcfcf;
+    margin: 1.5em .25em;
+    padding: 1em;
+}
+
+#flash_error {
+    border-top: 1px solid #f7d0d0;
+    border-bottom: 1px solid #c87676;
+    background-color: #f3c7c7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3c7c7), to(#eea2a2));
+    background: -moz-linear-gradient(top, #f3c7c7, #eea2a2);
+    background: linear-gradient(top, #f3c7c7, #eea2a2);
+    color: #d12f19;
+}
+
+#flash_notice {
+    border-top: 1px solid #fefbcd;
+    border-bottom: 1px solid #e6e837;
+    background-color: #feffb1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#feffb1), to(#f0f17f));
+    background: -moz-linear-gradient(top, #feffb1, #f0f17f);
+    background: linear-gradient(top, #feffb1, #f0f17f);
+    color: #817134;
+}
