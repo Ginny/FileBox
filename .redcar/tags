@@ -1,11 +1,13 @@
-1304462930
+1304846749
 AddAttachmentUploadedFileToAsset	/home/droid/FileBox/db/migrate/20110426215541_add_attachment_uploaded_file_to_asset.rb	class AddAttachmentUploadedFileToAsset 
+ApplicationController	/home/droid/FileBox/app/controllers/application_controller.rb	class ApplicationController 
 Asset	/home/droid/FileBox/app/models/asset.rb	class Asset 
 AssetTest	/home/droid/FileBox/test/unit/asset_test.rb	class AssetTest 
 AssetsController	/home/droid/FileBox/app/controllers/assets_controller.rb	class AssetsController 
 AssetsControllerTest	/home/droid/FileBox/test/functional/assets_controller_test.rb	class AssetsControllerTest 
 AssetsHelper	/home/droid/FileBox/app/helpers/assets_helper.rb	module AssetsHelper
 CreateAssets	/home/droid/FileBox/db/migrate/20110426195434_create_assets.rb	class CreateAssets 
+HomeController	/home/droid/FileBox/app/controllers/home_controller.rb	class HomeController 
 User	/home/droid/FileBox/app/models/user.rb	class User 
 create	/home/droid/FileBox/app/controllers/assets_controller.rb	  def create
 destroy	/home/droid/FileBox/app/controllers/assets_controller.rb	  def destroy
@@ -13,8 +15,10 @@ down	/home/droid/FileBox/db/migrate/20110426195434_create_assets.rb	  def self.d
 down	/home/droid/FileBox/db/migrate/20110426215541_add_attachment_uploaded_file_to_asset.rb	  def self.down
 edit	/home/droid/FileBox/app/controllers/assets_controller.rb	  def edit
 file_name	/home/droid/FileBox/app/models/asset.rb	  def file_name
+file_size	/home/droid/FileBox/app/models/asset.rb	  def file_size
 get	/home/droid/FileBox/app/controllers/assets_controller.rb	  def get
 index	/home/droid/FileBox/app/controllers/assets_controller.rb	  def index
+index	/home/droid/FileBox/app/controllers/home_controller.rb	  def index
 new	/home/droid/FileBox/app/controllers/assets_controller.rb	  def new
 show	/home/droid/FileBox/app/controllers/assets_controller.rb	  def show
 test_create_invalid	/home/droid/FileBox/test/functional/assets_controller_test.rb	  def test_create_invalid
