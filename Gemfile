@@ -16,7 +16,10 @@ gem 'nifty-generators', :group => :development
 # For file uploads
 gem 'paperclip', '~> 2.3'
 
-# For facebook login
+# For twitter login
 gem 'oauth2'
 
 # gem "mocha", :group => :test
+
+# For nested folders - https://github.com/amerine/acts_as_tree
+gem 'acts_as_tree'
