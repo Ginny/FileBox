@@ -1,6 +1,7 @@
 class Asset < ActiveRecord::Base
-  attr_accessible :user_id, :uploaded_file  
+  attr_accessible :user_id, :uploaded_file, :folder_id  
   belongs_to :user
+  belongs_to :folder
   
   # paperclip usage
   has_attached_file :uploaded_file,

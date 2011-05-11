@@ -1,5 +1,6 @@
-1304860572
+1305124119
 AddAttachmentUploadedFileToAsset	/home/droid/FileBox/db/migrate/20110426215541_add_attachment_uploaded_file_to_asset.rb	class AddAttachmentUploadedFileToAsset 
+AddFolderIdToAssets	/home/droid/FileBox/db/migrate/20110511092742_add_folder_id_to_assets.rb	class AddFolderIdToAssets 
 ApplicationController	/home/droid/FileBox/app/controllers/application_controller.rb	class ApplicationController 
 Asset	/home/droid/FileBox/app/models/asset.rb	class Asset 
 AssetTest	/home/droid/FileBox/test/unit/asset_test.rb	class AssetTest 
@@ -15,6 +16,7 @@ FoldersControllerTest	/home/droid/FileBox/test/functional/folders_controller_tes
 FoldersHelper	/home/droid/FileBox/app/helpers/folders_helper.rb	module FoldersHelper
 HomeController	/home/droid/FileBox/app/controllers/home_controller.rb	class HomeController 
 User	/home/droid/FileBox/app/models/user.rb	class User 
+browse	/home/droid/FileBox/app/controllers/home_controller.rb	  def browse  
 create	/home/droid/FileBox/app/controllers/assets_controller.rb	  def create
 create	/home/droid/FileBox/app/controllers/folders_controller.rb	  def create
 destroy	/home/droid/FileBox/app/controllers/assets_controller.rb	  def destroy
@@ -22,6 +24,7 @@ destroy	/home/droid/FileBox/app/controllers/folders_controller.rb	  def destroy
 down	/home/droid/FileBox/db/migrate/20110426195434_create_assets.rb	  def self.down
 down	/home/droid/FileBox/db/migrate/20110426215541_add_attachment_uploaded_file_to_asset.rb	  def self.down
 down	/home/droid/FileBox/db/migrate/20110508115232_create_folders.rb	  def self.down
+down	/home/droid/FileBox/db/migrate/20110511092742_add_folder_id_to_assets.rb	  def self.down
 edit	/home/droid/FileBox/app/controllers/assets_controller.rb	  def edit
 edit	/home/droid/FileBox/app/controllers/folders_controller.rb	  def edit
 file_name	/home/droid/FileBox/app/models/asset.rb	  def file_name
@@ -57,5 +60,6 @@ test_update_valid	/home/droid/FileBox/test/functional/folders_controller_test.rb
 up	/home/droid/FileBox/db/migrate/20110426195434_create_assets.rb	  def self.up
 up	/home/droid/FileBox/db/migrate/20110426215541_add_attachment_uploaded_file_to_asset.rb	  def self.up
 up	/home/droid/FileBox/db/migrate/20110508115232_create_folders.rb	  def self.up
+up	/home/droid/FileBox/db/migrate/20110511092742_add_folder_id_to_assets.rb	  def self.up
 update	/home/droid/FileBox/app/controllers/assets_controller.rb	  def update
 update	/home/droid/FileBox/app/controllers/folders_controller.rb	  def update

@@ -64,4 +64,10 @@ Filebox::Application.routes.draw do
   
   # For file downloads - so we can use download_url() in our view...Points only on our controller, where is the full path
   match "assets/get/:id" => "assets#get", :as => "download"
-  end
+  
+  # For browsing inside folders
+  match "browse/:folder_id" => "home#browse", :as => "browse"
+ 
+  # For creating subfolders
+  match "browse/:folder_id/new_folder" => "folders#new", :as => "new_sub_folder"
+end
