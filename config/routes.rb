@@ -70,4 +70,7 @@ Filebox::Application.routes.draw do
  
   # For creating subfolders
   match "browse/:folder_id/new_folder" => "folders#new", :as => "new_sub_folder"
+  
+  # For uploading files to folders
+  match "browse/:folder_id/new_file" => "assets#new", :as => "new_sub_file"
 end

@@ -7,11 +7,15 @@
        <ul id= "top_menu">      
          <li><%= link_to "Upload", new_asset_path %></li>
         <!-- If we are in a folder, create new subfolder -->
-        <% if @current_folder %>
-            <li><%= link_to "New folder", new_sub_folder_path(@current_folder) %></li>
-        <% else %>
-            <li><%= link_to "New folder", new_folder_path %></li>
-        <% end %>
+        <ul id= "top_menu">      
+      <% if @current_folder %>  
+          <li><%= link_to "Upload", new_sub_file_path(@current_folder) %></li>  
+          <li><%= link_to "New Folder", new_sub_folder_path(@current_folder) %></li>  
+      <% else %>  
+          <li><%= link_to "Upload", new_asset_path %></li>  
+          <li><%= link_to "New Folder", new_folder_path %></li>  
+      <% end %>  
+</ul>
        </ul>  
    </div>
    <%= render :partial => "breadcrumbs" %> 
