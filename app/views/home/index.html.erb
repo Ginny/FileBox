@@ -1,21 +1,18 @@
-<% unless user_signed_in? %>  
-   <h1>Welcome to FileBox</h1>  
-   <p>Best sharing app foreva.</p>  
-     
-<% else %>  
-   <div id="menu">  
-       <ul id= "top_menu">      
-         <li><%= link_to "Upload", new_asset_path %></li>
-        <!-- If we are in a folder, create new subfolder -->
-        <ul id= "top_menu">      
-      <% if @current_folder %>  
-          <li><%= link_to "Upload", new_sub_file_path(@current_folder) %></li>  
-          <li><%= link_to "New Folder", new_sub_folder_path(@current_folder) %></li>  
-      <% else %>  
-          <li><%= link_to "Upload", new_asset_path %></li>  
-          <li><%= link_to "New Folder", new_folder_path %></li>  
-      <% end %>  
-</ul>
+<% unless user_signed_in? %>
+<h1>Welcome to FileBox</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet arcu et quam commodo pulvinar. Curabitur massa est, hendrerit vitae eleifend vitae, viverra eget metus. Quisque tempus, eros eu pharetra semper, nibh velit malesuada justo, a dapibus tortor sem vel justo. Quisque rhoncus est a sem porta hendrerit. Nam sit amet justo eget nulla congue dapibus. Aliquam nec aliquet felis. Sed sit amet tortor elit, sit amet porta sem. Phasellus vel odio odio, vel lobortis metus. Vivamus eros arcu, adipiscing eget tincidunt sed, tincidunt nec dolor. Quisque lorem dolor, fringilla a gravida eget, pretium vel ante. Suspendisse id ligula eu lectus molestie vestibulum eu vel risus. Pellentesque ut mollis lectus. Sed id ipsum magna. Mauris iaculis dui in massa malesuada eget rhoncus turpis dictum. Curabitur et diam ac odio accumsan luctus. Vivamus porta augue et justo varius sed ultricies leo feugiat. Pellentesque sem risus, faucibus quis blandit ac, semper in mi. </p>
+<% else %>
+<div id="menu">
+  <!-- If we are in a folder, create new subfolder -->
+  <ul id= "top_menu">
+    <% if @current_folder %>
+    <li><%= link_to "Upload", new_sub_file_path(@current_folder) %></li>
+    <li><%= link_to "New Folder", new_sub_folder_path(@current_folder) %></li>
+    <% else %>
+    <li><%= link_to "Upload", new_asset_path %></li>
+    <li><%= link_to "New Folder", new_folder_path %></li>
+    <% end %>
+
        </ul>  
    </div>
    <%= render :partial => "breadcrumbs" %> 

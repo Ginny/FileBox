@@ -1,4 +1,4 @@
-1305484628
+1306005879
 AddAttachmentUploadedFileToAsset	/home/droid/FileBox/db/migrate/20110426215541_add_attachment_uploaded_file_to_asset.rb	class AddAttachmentUploadedFileToAsset 
 AddFolderIdToAssets	/home/droid/FileBox/db/migrate/20110511092742_add_folder_id_to_assets.rb	class AddFolderIdToAssets 
 Application	/home/droid/FileBox/config/application.rb	  class Application 
